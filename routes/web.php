@@ -28,3 +28,6 @@ Route::get('id/{id}', function($id) {
 })->name("routeWithId");
 
 Route::get('user/{id}', 'UserController@show');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
